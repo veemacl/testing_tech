@@ -3,7 +3,7 @@
 * It should return a greeting string as shown below: */
 greet("Luna"); //"Hey Luna!"
 // Solution:
-let greet = name => `Hey ${name}!`;
+let greet = name => console.log(`Hey ${name}!`);
 
 // Q2 Convert the function isEven() into an equivalent arrow function.
 function isEven(num){
@@ -48,13 +48,13 @@ function printOnly(){
     console.log("printing");
   }
 // Solution:
-let printOnly = () => {
-    console.log("printing");
-    }
+let printOnly = () => console.log("printing");
 
 // Q6 Write the arrow function for the following:
 function sum(num1, num2){
     return num1 + num2
 }
 // Solution:
-let sum = (num1, num2) => num1 + num2;
+let sum = (num1, num2) => {
+  return num1 + num2
+};
