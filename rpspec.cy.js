@@ -1,6 +1,6 @@
 describe('rock paper scissors', () => {
   it('access site', () => {
-    cy.visit('../../rps/index.html')
+    cy.visit('http://127.0.0.1:5000/index.html')
   })
   it('validates page layout', () => {
     cy.get('h4').should("have.text","Your choice: Computer choice: Result: ")
